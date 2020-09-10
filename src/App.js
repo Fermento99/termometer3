@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Room from './utils/Room';
 import styled from 'styled-components';
-import Graph from './utils/Graph'
+import Graph from './utils/Graph';
+import Timer from './utils/Timer';
 
 
 const Container = styled.div`
@@ -12,10 +13,13 @@ const Container = styled.div`
 `
 
 const App = ({ result }) => {
-  const { salon, pawel, michal, bedroom, bathroom } = result
+  const { salon, pawel, michal, bedroom, bathroom, date } = result
   const [room, setRoom] = useState(null)
   return (
     <>
+      <Container>
+        <Timer time={date}></Timer>
+      </Container>
       <Container>
         <Room temp={salon} roomname="Salon" onClick={() => setRoom("salon")} />
         <Room temp={pawel} roomname="Pawel" onClick={() => setRoom("pawel")} />

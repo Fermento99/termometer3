@@ -1,9 +1,0 @@
-*, ::after, ::before {
-    position: relative;
-    box-sizing: border-box;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-body {
-    background: #aaa;
-}
