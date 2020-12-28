@@ -74,7 +74,7 @@ const Graph = ({ room }) => {
 
   useEffect(() => {
     if(!room) return;
-    fetch(`http://192.168.89.200:3001/temp/hist/${room}/${size}`)
+    fetch(`http://192.168.89.20:3001/temp/hist/${room}/${size}`)
       .then(res => res.json())
       .then(res => draw(res, ref.current))
   }, [size, room])
