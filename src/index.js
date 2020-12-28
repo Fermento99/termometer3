@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 
-fetch(`http://192.168.89.200:3001/temp/now`)
+fetch(`http://192.168.89.20:3001/temp/now`)
     .then((result => {
         return result.json()
     }))
