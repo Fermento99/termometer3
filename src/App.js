@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 
 const App = ({ result }) => {
-  const { salon, pawel, michal, bedroom, bathroom, date } = result
+  const { salon, pawel, michal, bathroom, bathroom, date } = result
   const [room, setRoom] = useState(null)
   return (
     <>

@@ -35,6 +35,7 @@ const draw = (obj, canv) => {
       datasets: [{
         label: 'temperatura',
         data: temp,
+        pointRadius: 0,
         borderWidth: 3,
         borderColor: '#333',
         backgroundColor: 'rgba(0,0,0,0)'
@@ -57,7 +58,7 @@ const draw = (obj, canv) => {
         xAxes: [{
           type: "time",
           time: {
-            unit: "hour"
+            unit: "hour",
           }
         }]
       }

@@ -1,6 +1,7 @@
 create table history (
 date datetime not null,
 bedroom float not null,
+bathroom float not null,
 salon float not null,
 pawel float not null,
 michal float not null,
